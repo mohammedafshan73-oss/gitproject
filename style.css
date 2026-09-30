@@ -428,10 +428,7 @@ nav a:hover {
 
 
 /* GALLERY */
-
-.gallery {
-    padding: 120px 10%;
-}
+/* PHOTO GALLERY */
 
 .gallery-grid {
     display: grid;
@@ -440,45 +437,55 @@ nav a:hover {
     gap: 15px;
 }
 
-.gallery-box {
-    display: flex;
-    align-items: end;
-    padding: 25px;
-
-    font-family: "Playfair Display", serif;
-    font-size: 25px;
-
-    background:
-        linear-gradient(transparent, rgba(0,0,0,0.8)),
-        radial-gradient(circle at center, #936038, #1d130d);
-
-    border: 1px solid #33251a;
-
-    transition: 0.4s;
+.gallery-photo {
+    position: relative;
+    overflow: hidden;
+    background: #171310;
 }
 
-.gallery-box:hover {
-    transform: scale(1.02);
+.gallery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
 }
 
-.box1 {
+.gallery-photo:hover img {
+    transform: scale(1.08);
+}
+
+.photo1 {
     grid-row: span 2;
 }
 
-.box2 {
-    background:
-        linear-gradient(transparent, rgba(0,0,0,0.8)),
-        radial-gradient(circle, #6f4b31, #15100c);
-}
-
-.box3 {
-    background:
-        linear-gradient(transparent, rgba(0,0,0,0.8)),
-        radial-gradient(circle, #a16c48, #20130c);
-}
-
-.box4 {
+.photo4 {
     grid-column: span 2;
+}
+
+.photo-title {
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+
+    text-shadow: 0 3px 15px black;
+}
+
+.gallery-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        transparent 45%,
+        rgba(0,0,0,0.75)
+    );
+
+    pointer-events: none;
 }
 
 
