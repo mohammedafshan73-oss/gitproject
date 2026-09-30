@@ -1,207 +1,371 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Brew & Bean | Specialty Coffee</title>
+    <title>VELORA CAFÉ | Coffee • Food • Moments</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span>V</span> VELORA
+        </div>
 
-<header class="navbar">
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <a href="#home" class="logo">
-        <span>☕</span>
-        Brew<span>&</span>Bean
-    </a>
+        <button class="nav-btn" onclick="scrollToMenu()">View Menu</button>
 
-    <nav id="nav">
-
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#story">Our Story</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-
-        <a href="#reservation" class="nav-button">
-            Book a Table
-        </a>
-
-    </nav>
-
-    <button class="hamburger" onclick="toggleMenu()">
-        ☰
-    </button>
-
-</header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+    </header>
 
 
-<!-- ================= HERO ================= -->
+    <!-- HERO -->
+    <section class="hero" id="home">
 
-<section class="hero" id="home">
+        <div class="hero-content">
 
-    <div class="hero-overlay"></div>
+            <p class="small-title">EST. 2026 • KOZHIKODE</p>
 
-    <div class="hero-content">
+            <h1>
+                Coffee made for
+                <span>beautiful moments.</span>
+            </h1>
 
-        <p class="eyebrow">
-            EST. 2026 · CALICUT
-        </p>
+            <p class="hero-text">
+                Specialty coffee, handcrafted desserts and unforgettable
+                conversations — all under one roof.
+            </p>
 
-        <h1>
-            Coffee made for
-            <span>slow moments.</span>
-        </h1>
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="scrollToMenu()">
+                    Explore Menu →
+                </button>
 
-        <p class="hero-description">
-            Specialty coffee, delicious food and a cozy space
-            where every moment tastes a little better.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#menu" class="btn btn-primary">
-                Explore Menu →
-            </a>
-
-            <a href="#story" class="btn btn-outline">
-                Discover Us
-            </a>
+                <button class="outline-btn" onclick="scrollToContact()">
+                    Visit Us
+                </button>
+            </div>
 
         </div>
 
-        <div class="hero-rating">
-            <strong>★★★★★</strong>
-            <span>4.9 · 500+ happy customers</span>
+        <div class="hero-card">
+
+            <div class="coffee-circle">
+                ☕
+            </div>
+
+            <p>Today's Special</p>
+
+            <h3>Velora Signature Latte</h3>
+
+            <span>₹249</span>
+
         </div>
 
-    </div>
-
-    <div class="scroll">
-        SCROLL TO EXPLORE ↓
-    </div>
-
-</section>
+    </section>
 
 
-<!-- ================= FEATURES ================= -->
-
-<section class="features">
-
-    <div class="feature">
-
-        <span>☕</span>
+    <!-- FEATURES -->
+    <section class="features">
 
         <div>
+            <span>☕</span>
             <h3>Specialty Coffee</h3>
-            <p>Freshly roasted beans</p>
+            <p>Freshly roasted premium beans.</p>
         </div>
-
-    </div>
-
-    <div class="feature">
-
-        <span>🥐</span>
 
         <div>
-            <h3>Fresh Every Day</h3>
-            <p>Made with love</p>
+            <span>🍰</span>
+            <h3>Fresh Desserts</h3>
+            <p>Baked fresh every morning.</p>
         </div>
-
-    </div>
-
-    <div class="feature">
-
-        <span>🌿</span>
 
         <div>
-            <h3>Cozy Atmosphere</h3>
-            <p>Your second home</p>
+            <span>✨</span>
+            <h3>Premium Ambience</h3>
+            <p>A place worth remembering.</p>
         </div>
 
-    </div>
+    </section>
 
-    <div class="feature">
 
-        <span>⚡</span>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <div class="image-overlay">
+                <span>THE VELORA EXPERIENCE</span>
+            </div>
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-label">OUR STORY</p>
+
+            <h2>
+                More than coffee.
+                <span>It's a feeling.</span>
+            </h2>
+
+            <p>
+                Velora Café was created for people who appreciate good coffee,
+                beautiful spaces and meaningful moments.
+            </p>
+
+            <p>
+                From our carefully selected beans to our freshly prepared
+                desserts, every detail is crafted to make your visit special.
+            </p>
+
+            <button class="primary-btn" onclick="showMessage()">
+                Discover Velora
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+
+        <div class="section-heading">
+
+            <p class="section-label">OUR MENU</p>
+
+            <h2>Made with <span>passion.</span></h2>
+
+            <p>
+                A carefully curated selection of coffee, food and desserts.
+            </p>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+            <div class="menu-card">
+
+                <div class="menu-icon">☕</div>
+
+                <h3>Velora Latte</h3>
+
+                <p>Espresso, silky steamed milk and signature foam.</p>
+
+                <div class="price">₹249</div>
+
+            </div>
+
+
+            <div class="menu-card featured">
+
+                <div class="popular">POPULAR</div>
+
+                <div class="menu-icon">🥐</div>
+
+                <h3>Butter Croissant</h3>
+
+                <p>Golden, flaky and freshly baked every morning.</p>
+
+                <div class="price">₹179</div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <div class="menu-icon">🍫</div>
+
+                <h3>Chocolate Cake</h3>
+
+                <p>Rich Belgian chocolate with velvety cream.</p>
+
+                <div class="price">₹229</div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <div class="menu-icon">🧋</div>
+
+                <h3>Cold Brew</h3>
+
+                <p>Slow brewed coffee served chilled over ice.</p>
+
+                <div class="price">₹199</div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <div class="menu-icon">🍝</div>
+
+                <h3>Creamy Pasta</h3>
+
+                <p>Italian pasta tossed in our signature cream sauce.</p>
+
+                <div class="price">₹299</div>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <div class="menu-icon">🍓</div>
+
+                <h3>Berry Cheesecake</h3>
+
+                <p>Classic cheesecake topped with fresh berries.</p>
+
+                <div class="price">₹259</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SPECIAL BANNER -->
+    <section class="special">
 
         <div>
-            <h3>Free Wi-Fi</h3>
-            <p>Work & relax</p>
+
+            <p class="section-label">WEEKEND SPECIAL</p>
+
+            <h2>Slow mornings.<br><span>Good coffee.</span></h2>
+
+            <p>
+                Enjoy our weekend breakfast combo with any specialty coffee.
+            </p>
+
+            <button class="primary-btn" onclick="orderNow()">
+                Order Now →
+            </button>
+
         </div>
 
-    </div>
+        <div class="special-price">
+            <small>COMBO FROM</small>
+            <strong>₹399</strong>
+        </div>
 
-</section>
-
-
-<!-- ================= MENU ================= -->
-
-<section class="menu-section" id="menu">
-
-    <div class="section-heading">
-
-        <p class="eyebrow">OUR MENU</p>
-
-        <h2>
-            Something for
-            <span>everyone.</span>
-        </h2>
-
-        <p>
-            Carefully crafted drinks and delicious bites,
-            made fresh every day.
-        </p>
-
-    </div>
+    </section>
 
 
-    <!-- FILTER BUTTONS -->
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
 
-    <div class="filters">
+        <div class="section-heading">
 
-        <button class="filter active" data-filter="all">
-            All
-        </button>
+            <p class="section-label">THE SPACE</p>
 
-        <button class="filter" data-filter="coffee">
-            Coffee
-        </button>
+            <h2>A place to <span>slow down.</span></h2>
 
-        <button class="filter" data-filter="food">
-            Food
-        </button>
+        </div>
 
-        <button class="filter" data-filter="dessert">
-            Desserts
-        </button>
+        <div class="gallery-grid">
 
-    </div>
+            <div class="gallery-box box1">COFFEE</div>
+            <div class="gallery-box box2">MOMENTS</div>
+            <div class="gallery-box box3">DESSERTS</div>
+            <div class="gallery-box box4">PEOPLE</div>
 
+        </div>
 
-    <!-- MENU GRID -->
-
-    <div class="menu-grid">
+    </section>
 
 
-        <!-- ITEM 1 -->
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
 
-        <article class="food-card" data-category="coffee">
+        <div class="contact-content">
 
-            <div class="food-image">
+            <p class="section-label">COME SAY HELLO</p>
 
-                <img
-                    src="https://images.unsplash.com/photo-1495474472287
+            <h2>Let's make your<br><span>day better.</span></h2>
+
+            <p>
+                Visit Velora Café for coffee, conversations and a little
+                escape from the everyday.
+            </p>
+
+            <div class="contact-info">
+
+                <div>
+                    <strong>📍 Location</strong>
+                    <p>Kozhikode, Kerala</p>
+                </div>
+
+                <div>
+                    <strong>🕒 Opening Hours</strong>
+                    <p>8:00 AM — 11:00 PM</p>
+                </div>
+
+                <div>
+                    <strong>📞 Contact</strong>
+                    <p>+91 98765 43210</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contact-box">
+
+            <h3>Reserve a Table</h3>
+
+            <input type="text" id="name" placeholder="Your Name">
+
+            <input type="email" id="email" placeholder="Email Address">
+
+            <input type="number" id="people" placeholder="Number of Guests">
+
+            <button class="primary-btn" onclick="reserveTable()">
+                Reserve Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logo">
+            <span>V</span> VELORA
+        </div>
+
+        <p>© 2026 Velora Café. Crafted with love.</p>
+
+        <div class="socials">
+            Instagram • Facebook • WhatsApp
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
