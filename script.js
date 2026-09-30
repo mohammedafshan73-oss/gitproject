@@ -1,8 +1,20 @@
 // MOBILE MENU
+@media(max-width: 600px) {
 
-function toggleMenu() {
-    const nav = document.getElementById("navMenu");
-    nav.classList.toggle("active");
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .photo1,
+    .photo4 {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .gallery-photo {
+        height: 280px;
+    }
 }
 
 
