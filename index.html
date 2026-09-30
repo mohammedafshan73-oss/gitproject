@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maison Noir — Premium Coffee & Dining" />
+  <title>Maison Noir | Premium Café</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#" class="logo">MAISON<span>NOIR</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#reservation" class="nav-button">Reserve a Table</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+
+  <!-- Hero -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">EST. 2018 · ARTISAN COFFEE</p>
+
+        <h1>
+          Coffee is an
+          <em>experience.</em>
+        </h1>
+
+        <p class="hero-description">
+          A quiet space where exceptional coffee, beautiful food,
+          and timeless design come together.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="button button-primary">Explore Menu</a>
+          <a href="#story" class="button button-outline">Discover Us</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span></span>
+        SCROLL TO EXPLORE
+      </div>
+
+    </section>
+
+
+    <!-- Introduction -->
+    <section class="intro section">
+
+      <div class="section-label">01 — THE PHILOSOPHY</div>
+
+      <div class="intro-content">
+        <p class="small-heading">MORE THAN JUST COFFEE</p>
+
+        <h2>
+          Crafted slowly.<br>
+          <em>Enjoyed deeply.</em>
+        </h2>
+
+        <p>
+          At Maison Noir, we believe the best moments deserve time.
+          From hand-selected beans to freshly baked pastries, every
+          detail is thoughtfully crafted for an unforgettable experience.
+        </p>
+
+        <a href="#story" class="text-link">Our Story <span>↗</span></a>
+      </div>
+
+    </section>
+
+
+    <!-- Story -->
+    <section class="story section" id="story">
+
+      <div class="story-image">
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=85"
+          alt="Premium coffee being prepared"
+        />
+      </div>
+
+      <div class="story-content">
+
+        <div class="section-label">02 — OUR STORY</div>
+
+        <h2>
+          A passion for
+          <em>beautiful simplicity.</em>
+        </h2>
+
+        <p>
+          Born from a love of exceptional coffee and understated
+          elegance, Maison Noir began as a small neighborhood café
+          with one simple idea: make every cup matter.
+        </p>
+
+        <p>
+          Today, we work with independent farmers and passionate
+          artisans to bring a carefully curated experience to every
+          guest who walks through our doors.
+        </p>
+
+        <div class="stats">
+          <div>
+            <strong>18+</strong>
+            <span>Origins</span>
+          </div>
+
+          <div>
+            <strong>06</strong>
+            <span>Years of Craft</span>
+          </div>
+
+          <div>
+            <strong>12k</strong>
+            <span>Happy Guests</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Menu -->
+    <section class="menu-section section" id="menu">
+
+      <div class="section-heading">
+        <div>
+          <div class="section-label">03 — THE MENU</div>
+
+          <h2>
+            Made with
+            <em>intention.</em>
+          </h2>
+        </div>
+
+        <p>
+          Seasonal ingredients, carefully sourced coffee,
+          and dishes designed to complement every moment.
+        </p>
+      </div>
+
+
+      <div class="menu-grid">
+
+        <article class="menu-card">
+          <div class="menu-number">01</div>
+
+          <div class="menu-icon">☕</div>
+
+          <h3>Signature Coffee</h3>
+
+          <p>
+            Espresso, flat whites, pour-over and our
+            signature Maison Noir blend.
+          </p>
+
+          <span class="price">From ₹180</span>
+        </article>
+
+
+        <article class="menu-card featured">
+          <div class="menu-number">02</div>
+
+          <div class="menu-icon">🥐</div>
+
+          <h3>Fresh Pastries</h3>
+
+          <p>
+            Handcrafted croissants, danishes and
+            seasonal pastries baked every morning.
+          </p>
+
+          <span class="price">From ₹160</span>
+        </article>
+
+
+        <article class="menu-card">
+          <div class="menu-number">03</div>
+
+          <div class="menu-icon">🍝</div>
+
+          <h3>All Day Dining</h3>
+
+          <p>
+            Elegant plates inspired by European café
+            culture and local ingredients.
+          </p>
+
+          <span class="price">From ₹320</span>
+        </article>
+
+      </div>
+
+      <div class="menu-button-wrapper">
+        <button class="button button-dark" id="fullMenuBtn">
+          View Full Menu
+        </button>
+      </div>
+
+    </section>
+
+
+    <!-- Quote -->
+    <section class="quote-section">
+
+      <div class="quote-overlay"></div>
+
+      <div class="quote-content">
+        <span>“</span>
+
+        <blockquote>
+          There is nothing quite like a beautifully
+          made cup of coffee in a beautiful place.
+        </blockquote>
+
+        <p>— THE MAISON NOIR PHILOSOPHY</p>
+      </div>
+
+    </section>
+
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+
+      <div class="section-heading centered">
+
+        <div class="section-label">04 — THE EXPERIENCE</div>
+
+        <h2>
+          Designed for
+          <em>slow moments.</em>
+        </h2>
+
+        <p>
+          Whether you're meeting someone special, working quietly,
+          or simply enjoying your morning ritual.
+        </p>
+
+      </div>
+
+
+      <div class="experience-grid">
+
+        <div class="experience-card">
+          <img
+            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=85"
+            alt="Elegant cafe interior"
+          />
+
+          <div class="experience-info">
+            <span>01</span>
+            <h3>The Space</h3>
+            <p>Warm textures, soft light and timeless interiors.</p>
+          </div>
+        </div>
+
+
+        <div class="experience-card">
+          <img
+            src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=85"
+            alt="Freshly brewed coffee"
+          />
+
+          <div class="experience-info">
+            <span>02</span>
+            <h3>The Craft</h3>
+            <p>Precision, patience and a genuine love for coffee.</p>
+          </div>
+        </div>
+
+
+        <div class="experience-card">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"
+            alt="Cafe dining area"
+          />
+
+          <div class="experience-info">
+            <span>03</span>
+            <h3>The Moment</h3>
+            <p>A place to pause, connect and enjoy the present.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Reservation -->
+    <section class="reservation section" id="reservation">
+
+      <div class="reservation-content">
+
+        <div>
+          <div class="section-label">05 — RESERVATIONS</div>
+
+          <h2>
+            Make it
+            <em>memorable.</em>
+          </h2>
+
+          <p>
+            Reserve your table and let us take care of the rest.
+          </p>
+        </div>
+
+
+        <form class="reservation-form" id="reservationForm">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Guests</label>
+              <select id="guests">
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+                <option>6+ Guests</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="form-row">
+
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="time">Time</label>
+              <select id="time">
+                <option>10:00 AM</option>
+                <option>12:00 PM</option>
+                <option>2:00 PM</option>
+                <option>5:00 PM</option>
+                <option>7:00 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </div>
+
+          </div>
+
+          <button type="submit" class="button button-light">
+            Request Reservation
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+
+      <div class="section-label">06 — FIND US</div>
+
+      <div class="contact-grid">
+
+        <div>
+          <h2>
+            Come by for
+            <em>a cup.</em>
+          </h2>
+        </div>
+
+        <div class="contact-details">
+
+          <div>
+            <span>ADDRESS</span>
+            <p>
+              24 Heritage Lane<br>
+              Downtown District<br>
+              Kerala, India
+            </p>
+          </div>
+
+          <div>
+            <span>OPENING HOURS</span>
+            <p>
+              Monday — Sunday<br>
+              8:00 AM — 10:00 PM
+            </p>
+          </div>
+
+          <div>
+            <span>CONTACT</span>
+            <p>
+              +91 98765 43210<br>
+              hello@maisonnoir.com
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer-top">
+
+      <a href="#" class="logo">MAISON<span>NOIR</span></a>
+
+      <p>
+        Exceptional coffee.<br>
+        Beautiful moments.
+      </p>
+
+      <div class="socials">
+        <a href="#">IG</a>
+        <a href="#">FB</a>
+        <a href="#">PI</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Maison Noir. All rights reserved.</span>
+      <span>Crafted with intention.</span>
+    </div>
+
+  </footer>
+
+
+  <!-- Reservation Modal -->
+  <div class="modal" id="reservationModal">
+
+    <div class="modal-box">
+
+      <button class="modal-close" id="modalClose">×</button>
+
+      <div class="modal-icon">✓</div>
+
+      <h2>Thank You</h2>
+
+      <p>
+        Your reservation request has been received.
+        We'll be in touch shortly to confirm your table.
+      </p>
+
+      <button class="button button-dark" id="modalDone">
+        Done
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
